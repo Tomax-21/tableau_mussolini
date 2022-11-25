@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+body {
+    background-color: rgb(37, 37, 37);
+   
+   
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(28, 28, 28, 0.7);
+}
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: all ease 0.4s;
+}
+header ul li a:hover, 
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+/*
+.card {
+    position: relative;
+    height: 500px;
+    width: 900px;
+    margin: 250px auto;
+    background-color: rgb(50, 50, 50);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6); 
+    border-radius: 15px;
+}
+
+.cardPropagandeGrande {
+    position: relative;
+    height: 600px;
+    width: 1000px;
+    margin: 250px auto;
+    background-color: rgb(50, 50, 50);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6); 
+    border-radius: 15px;
+}
+.cardPropagandeGrande2 {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    margin: 250px auto;
+    background-color: rgb(50, 50, 50);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6); 
+    border-radius: 15px;
+}
+.cardPropagandeGrande3 {
+    position: relative;
+    height: 550px;
+    width: 1000px;
+    margin: 250px auto;
+    background-color: rgb(50, 50, 50);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.6); 
+    border-radius: 15px;
+}*//*
+.thumbnail {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: -30px;
+    height: 320px;
+    width: 530px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.6);
+    overflow: hidden; 
+
+    /*object-fit: cover;
+    object-position: center;
+}*/
+/*
+
+
+img.left {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+
+/*
+.right {
+    margin-left: 590px;
+    margin-right: 20px;
+}
+
+h1 {
+    padding-top: 25px;
+    font-size: 1.3rem;
+    color: rgb(217, 217, 217);
+    margin-bottom: 25px; 
+}
+  
+
+.separator {
+    margin-top: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+p {
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 0.92rem;
+    /*line-height: 150%;*//*
+    color: rgb(217, 217, 217); 
+}
+
+
+.paragraphe {
+    position: absolute;
+    left: 30px;
+    width: 60%;
+    top: 300px;
+    font-size: 0.92rem;
+    color: rgb(217, 217, 217); 
+}
+.paragrapheGrand {
+    position: absolute;
+    left: 30px;
+    width: 53%;
+    top: 300px;
+    font-size: 0.92rem;
+    color: rgb(217, 217, 217); 
+}
+*/
+.fab {
+
+    box-sizing: border-box;
+    padding-top: 22px;
+    background-color: #0d7200;
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 15px;
+
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1); 
+}
+
+/*https://codepen.io/IMarty/pen/zrdYGe*/
+.voc {
+    color: red !important;
+    text-decoration: red wavy underline;
+}
+img {
+    height: 512px;
+    min-width: auto;
+    max-width: 712px;
+    border-radius: 15px;
+    object-fit: cover;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1); 
+}
+iframe {
+    height: 512px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.1); 
+}
+
+.card {
+    color: white;
+    display: flex;
+    margin: 150px;
+    
+}
+.right {
+    text-align: justify;
+}
+h1 {
+    margin: 0 55px;
+    font-size: 38px;
+}
+.right p {
+    font-size: 1.3em;
+    margin: 35px 55px 55px 55px;
+}
+
+.card a {
+    color: white;
+    margin: 25px 0;
+
+}
+
+@media screen and (max-width: 1555px) {
+    .card {
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .card {
+        margin: 160px 25px 0 25px;
+        flex-direction: column;
+    }
+    .card a {
+        
+        margin: 0;
+    
+    }
+    h1 {
+        margin: 0;
+    }
+    .right p {
+        margin: 35px 0 55px 0;
+    }
+}

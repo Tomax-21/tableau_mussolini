@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/icon2.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="css/vocabulaire.css">
+    
+        <title>Sources</title>
+    </head>
+    <body>
+        <header id="header">
+            <a href="index.html" class="logo">Fascisme Italien</a>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="index.html#tableau">Tableau</a></li>
+                <li><a href="vocabulaire.html">Vocabulaire</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                
+            </ul>
+        </header>
+
+        <div class="listeVoc" id="voc">
+            <h2>Sources</h2>
+            <p>Voici la liste de toutes les sources utilisées</p>
+    
+            <table class="tableSource">
+                <tbody id="table-body">
+          
+    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <h1>© Thomas MILLET</h1>
+          </div>
+
+        <script>
+            let listeSource = [
+                ["https://amupod.univ-amu.fr/video/21210-mussolini-et-lideologie-fasciste-vs-hitler-et-lideologie-naziemp4/", "L'idéologie du fascisme"],
+                ["https://www.herodote.net/fasci_fasciste-mot-158.php", "Symbole faiseau"],
+                ["https://www.larousse.fr/encyclopedie/divers/les_Chemises_noires/113199", "Symbole noir"],
+                ["https://youtu.be/HQOGAAk6oNE?list=PLl32ehdSm4EThGuTZffE21572U9laOWr6", "Les acteurs"],
+                ["https://www.lelivrescolaire.fr", "Propagande"],
+                ["https://www.geo.fr/histoire ", "Propagande"],
+                ["https://manuelnumeriquemax.belin.education", "Propagande"],
+                ["https://ligue-enseignement.be ", "Propagande"],
+                ["https://www.herodote.net", "Propagande"],
+                ["https://journals.openedition.org/temoigner/1415?lang=de", "Opposition"],
+                ["https://www.lhistoire.fr/questions-sur-le-fascisme-italien", "Opposiiton"],
+                ["https://www.aphg.fr/Les-origines-et-les-caracteristiques-du-fascisme", "Géopolitique"],
+                ["https://ehne.fr/fr/encyclopedie/th%C3%A9matiques/l%E2%80%99europe-politique/les-mod%C3%A8les-politiques-pour-faire-l%27europe/id%C3%A9ologie-fasciste-et-europe", "Géopolitique"],
+                ["https://www.geo.fr/histoire/mussolini-hitler-les-dessous-dune-sinistre-alliance-209527", "Alliance Mussolini-Hitler"],
+                ["https://enseignants.lumni.fr/fiche-media/00000000914/la-marche-sur-rome-27-octobre-1922-et-l-accession-au-pouvoir-de-mussolini-muet.html", "Accession au pouvoir"],
+                ["https://fr.wikipedia.org/wiki/%C3%89conomie_des_r%C3%A9gimes_fascistes", "Economie"],
+                ["https://fr.wikipedia.org/wiki/Giovinezza_(hymne_fasciste)", "Hymne fasciste"],
+                ["https://www.cairn.info/l-italie-fasciste--9782200269944-page-95.htm", "Tradition"],
+                ["https://www.radiofrance.fr/francemusique/sous-l-italie-fasciste-de-mussolini-la-musique-au-service-du-dictateur-et-de-l-etat-4801866", "La musique"],
+                ["https://www.cairn.info/revue-sciences-sociales-et-sport-2013-1-page-63.htm", "Sport"],
+                ["https://www.lemonde.fr/mondial-2018/article/2018/06/15/italie-tchecoslovaquie-1934-quand-mussolini-decidait-de-l-issue-des-rencontres_5315604_5193650.html", "La coupe du monde"],
+            ]
+            let tableau = document.getElementById("table-body")
+
+            for (i=0; i<listeSource.length; i++) {
+                let ligne = document.createElement("tr")
+                let colonne = document.createElement("td")
+                colonne.classList = "ligneSource"
+                let lien = document.createElement("a")
+                lien.href = listeSource[i][0]
+                lien.innerHTML = listeSource[i][1]
+                lien.target = "_blank"
+
+                colonne.appendChild(lien)
+                ligne.appendChild(colonne)
+
+                tableau.appendChild(ligne)
+            }
+        </script>
+    
+</body>
+</html>

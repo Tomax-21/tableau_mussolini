@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/icon2.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/vocabulaire.css">
+
+    <title>Vocabulaire</title>
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Fascisme Italien</a>
+        <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="index.html#tableau">Tableau</a></li>
+            <li><a href="vocabulaire.html">Vocabulaire</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            
+        </ul>
+    </header>
+
+    <div class="listeVoc" id="voc">
+        <h2>Vocabulaire</h2>
+        <p>Voici la liste du vocabulaire important que vous pouvez retrouver dans le tableau</p>
+
+        <table class="table">
+            <tbody id="table-body">
+                <tr></tr>
+                <tr></tr>
+
+                
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <h1>© Thomas MILLET</h1>
+    </div>
+
+    <script>
+        
+        let listeDef = [
+            ["Benito Mussolini", "Benito Mussolini est un homme politique italien, né en 1883 et mort en 1945 pendu par les pieds. Fondateur du fascisme, il sera président du conseil du royaume d'Italie, et sera alors désigné comme « Duce », qui signifie le chef ou le guide en latin.Bien que s'étant allié à Adolf Hitler à travers le pacte d'acier en 1939, il ne partagera pas son idéologie pour autant et le désignera même comme un « dangereux psychopathe ».Politiquement, Mussolini est très surprenant, puisqu'il était initialement membre du PSI, et même membre d'un quotidien socialiste en 1912, mais à partir du début de la Première Guerre Mondiale en 1914, il changera d'opinion et fonderal son propre journal nationaliste II Populo d'italia », puis à la suite de la « victoire mutilée » italienne, il fondera en 1921 le PNF, avant de monter au pouvoir l'année suivante"],
+            ["Carlo Rosseli", "Carlo roselli est un homme politique italien du début du vingtième siècle(1899-1937), qui, après s'être exilé à Paris en 1929, va devenir un membre fondateur du mouvement antifasciste Giustizia e libertà, qui enverra alors un hebdomadaire anti fasciste chaque semaine. Enfant d'une famille juive de Toscane très active politiquement, il lui semblera alors logique et nécessaire de se dresser face au fascisme qui l'a exilé."],
+            ["Primo Levi", "Primo Lévi est un écrivain et docteur en chimie de la première moitié du vingtième siècle. En tant qu'italien juif, il souffrira du fascime italien, et sera même envoyé en 1944 dans un camps de concentration, auquel il survivra et à la suite duquel il écrira « Si c'est un homme », qui, relatant son expérience des camps de concentration, deviendra un document historique de grande valeur"],
+            ["Giusepppe Blanc", "Giuseppe Blanc est né dans la province de turin en 1886 et est mort en 1969 en Ligurie. C'est un compositeur italien qui compose notament l'hymne étudiant la goliarda dont l'air et le refran sera réutiliser pour l'hymne fasciste, il a également l'auteur de la musique du premier hymne national de la Somalie indépendante."],
+            ["Prérogatives", "Avantage ou droit attaché à une fonction, un état. Synonymes : Privilège"],
+            ["Chemises Noires", "Adhérents à la milice du régime fasciste de Benito Mussolini et La chemise noire provient des troupes de choc italiennes de l'élite audacieuse, les Arditi, des soldats spécialement entraînés pour une vie de violence et vêtus d'uniformes uniques"],
+            ["Avant-gardiste", "Qui est en avance sur son époque en art, en politique..."],
+            ["Communisme", "Organisation politique, sociale, fondée sur la suppression de la propriété privée au profit delà propriété collective"],
+            ["Anarchisme", "Conception politique qui tend à supprimer l'état, éliminer de la société tout pouvoir dispensant d'un droit de contrainte"],
+            ["Endoctrinement", "Faire partager à quelqu'un ses opinions, lui faire adopter telle doctrine, telle attitude en lui imposant des règles de pensée, de conduite."],
+            ["Faisceaux italiens", "Les Faisceaux italiens sont un mouvement politique créé, entre autres, par Benito Mussolin"],
+            ["OVRA", "Organisation de la surveillance et de la répression de l’antifascisme."],
+            ["Guérilla", "Forme de guerre caractérisée par des actions de harcèlement, d'embuscades ou de coups de main. Et Groupe de soldats armés légèrement et chargés de harceler l'ennemi."],
+            ["Licteur", "Garde portant une hache dans un faisceau de verges, qui marchait devant les hauts magistrats (dictateur, etc.)."],
+            ["Martial", "Se dit d'une attitude résolue, décidée, qui cherche à en imposer "],
+            ["PNF", "Parti National Fasciste"],
+            ["PSI", "Parti Socialiste Italien"],
+            ["Libertés individuelles", "L'ensemble des droits fondamentaux"],
+            ["Libéralisme politique", "Le courant de pensée qui prône la défense des droits individuels"],
+            
+
+
+
+        ];
+        let tableau = document.getElementById("table-body");
+
+        for (i = 0; i<listeDef.length; i++) {
+ 
+
+            var row1 = document.createElement("tr");
+            let colonne1 = document.createElement("td")
+            colonne1.classList = "titleLigne";
+            colonne1.innerHTML = listeDef[i][0];
+            row1.appendChild(colonne1)
+
+            for (k = 0; k<4; k++) {
+                let colonne = document.createElement("td");
+                row1.appendChild(colonne)
+            }
+
+            var row2 = document.createElement("tr")
+
+            var colonne2 = document.createElement("td");
+            colonne2.classList = "infoLigne";
+            colonne2.innerHTML = listeDef[i][1];
+            colonne2.colSpan = 5;
+
+            row2.appendChild(colonne2)
+
+
+
+            rowVide = document.createElement("tr");
+            rowVide.classList = "ligneVide"
+            tableau.appendChild(row1);
+            tableau.appendChild(row2);
+            tableau.appendChild(rowVide);
+
+            
+
+        };
+       
+
+
+
+    </script>
+</body>
+</html>
